@@ -1,0 +1,133 @@
+:root {
+  /* Base font size */
+  font-size: 16px; /* 1rem = 16px */
+
+  /* Primary Theme Colors */
+  --color-primary: #1ca301;
+  --color-secondary: #1d2738;
+  --color-active: #ffc107;
+
+  /* Text Colors */
+  --text-light: #7f8fa9;
+  --text-medium: #5b687b;
+  --text-dark: #2D3954;
+  --text-invert: #ffffff;
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --black-soft: #1a1a1a;
+  --gray-50: #f8f9fa;
+  --gray-100: #f1f3f5;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+
+  /* Accent Colors */
+  --red: #dc3545;
+  --red-light: #f8d7da;
+  --green: #28a745;
+  --green-light: #d4edda;
+  --blue: #007bff;
+  --blue-light: #d0e7ff;
+  --yellow: #ffc107;
+  --yellow-light: #fff3cd;
+  --orange: #fd7e14;
+  --orange-light: #ffe5d0;
+
+  /* Background Colors */
+  --background-light: #f9f9f9;
+  --background-lighter: #fefefe;
+  --background-muted: #f4f5f7;
+  --background-dark: #1d2738;
+  --background-darker: #0f141e;
+
+  /* Border Colors */
+  --border-light: #e0e0e0;
+  --border-medium: #d1d5db;
+  --border-dark: #c0c0c0;
+
+  /* Spacing (Margin / Padding) */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 0.75rem;  /* 12px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  --spacing-xxl: 3rem;    /* 48px */
+
+  /* Font Sizes */
+  --font-xs: 0.75rem;     /* 12px */
+  --font-sm: 0.875rem;    /* 14px */
+  --font-md: 1rem;        /* 16px */
+  --font-lg: 1.25rem;     /* 20px */
+  --font-xl: 1.5rem;      /* 24px */
+  --font-xxl: 2rem;       /* 32px */
+  --font-hero: 3rem;      /* 48px */
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1.25rem;   /* 20px */
+
+  /* Shadows */
+  --shadow-xs: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);  /* 1px 2px */
+  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);    /* 2px 4px */
+  --shadow-md: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);       /* 4px 8px */
+  --shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);         /* 8px 16px */
+  --shadow-xl: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);      /* 12px 24px */
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+.fs-13 {
+  font-size: 0.812rem;
+}
+.fs-10 {
+  font-size: 0.625rem;
+}
+.text-black {
+  color: var(--text-dark);
+}
+.text-light-black {
+  color: var(--text-medium);
+}
+.text-muted {
+  color: var(--text-light);
+}
+.section {
+  padding: var(--spacing-xxl) 0;
+}
+.muted-section {
+  background-color: var(--background-muted);
+}
+.py-xxl {
+  padding-top: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xxl);
+}
+.topic {
+  font-size: var(--font-xl); /* 24px */
+  color: var(--text-dark);
+}
+.sub-topic {
+  font-size: var(--font-sm);   /* 14px */
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+.section-header {
+  margin-bottom: var(--spacing-xl); /* 32px */
+}

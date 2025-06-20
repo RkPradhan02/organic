@@ -1,0 +1,23 @@
+.swiper-button-prev, .swiper-button-next {
+    color: var(--color-primary);
+    /* color: rgb(28, 163, 1); */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+} 
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 12px !important;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {  
+    background: rgba(28, 163, 1, 0.3);
+    color: #fff;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--color-primary);
+}
+.order-btn {
+    background-color: var(--color-primary);
+    color: var(--white);
+    padding: var(--spacing-sm) var(--spacing-xl);
+}

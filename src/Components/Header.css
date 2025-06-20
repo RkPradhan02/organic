@@ -1,0 +1,32 @@
+.header-banner {
+    background-color: var(--background-muted);
+}
+.main-header {
+    background-color: var(--color-primary);
+}
+.cart-btn {
+    border-radius: 100%;
+    border: 1px solid var(--gray-600);
+    color: var(--white);
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.category-col {
+    border-right: 0.5px solid rgba(255,255,255,0.4);
+}
+.category-btn::after {
+    display: none;
+}
+.ham-menu {
+    color: var(--color-active);
+}
+.nav-link {
+    color: var(--white);
+    padding: 0;
+}
+.nav-link:hover  {
+    color: var(--color-active);
+}
