@@ -14,8 +14,9 @@ const DealProduct = ({ productIds }) => {
       .filter((item) => productIds.includes(item.id))
       .map((item) => ({ ...item, deal: true }));
       setProducts(result);
-  }
-}, [productIds]);
+    }
+  }, [productIds]);
+  console.log("products iin deal products", products)
 
   return (
     <>

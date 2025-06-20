@@ -13,7 +13,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import DealProduct from "../Components/DealProducts";
+import DealProducts from "../Components/DealProducts";
 
 const Home = () => {
   const vegDeal = useMemo(() => ["1","5","12","15"],[]);
@@ -128,7 +128,7 @@ const Home = () => {
                     <h4 className="topic text-center">Fresh Vegetables</h4>
                 </div>
                 {/* products */}
-                <DealProduct productIds={vegDeal}/>
+                <DealProducts productIds={vegDeal}/>
             </Container>
       </Container>
         </>

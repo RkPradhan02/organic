@@ -5,12 +5,17 @@ import { MdAddShoppingCart } from "react-icons/md";
 import { Container, Row } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import './ProductCard.css';
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/slices/cartSlice";
 
-const ProductCard = ({items, isDiscount}) => {
-    const [discount, setDiscount] = useState(false);
-    if(isDiscount) {
-        setDiscount(true);
-    }
+const ProductCard = ({product}) => {
+    // const [discount, setDiscount] = useState(false);
+    // if(isDiscount) {
+    //     setDiscount(true);
+    // }
+    console.log("item in card", product)
+    const dispatch = useDispatch();
+    const handleAdd = () => dispatch(addToCart(product));
 
   return (
     <>
@@ -18,8 +23,8 @@ const ProductCard = ({items, isDiscount}) => {
             <div className="card  z-depth-4">
               <div className="card-image">
                 <img
-                  src="https://res.cloudinary.com/landry-bete/image/upload/v1488769144/dessert14_trnhnj.jpg"
-                  alt="product-img"
+                  src={product.image}
+                  alt={product.name}
                 />
                 
               <ul className="card-action-buttons">
@@ -40,7 +45,7 @@ const ProductCard = ({items, isDiscount}) => {
                 <li className="cart-btn border-0">
                   <a
                     id="buy"
-                    className="btn-floating waves-effect waves-light blue text-light"
+                    className="btn-floating waves-effect waves-light blue text-light" onClick={handleAdd}
                   >
                     <MdAddShoppingCart />
                   </a>
@@ -49,13 +54,13 @@ const ProductCard = ({items, isDiscount}) => {
               </div>
               <div className="p-3 w-100">
                 <span className="card-title-box">
-                  <span className="card-title">MacaronMacaron</span>
+                  <span className="card-title">{product.name}</span>
                 </span>
               <div className="card-content p-0">
                 <div className="">
                   <div className="">
-                    <p className="mb-0">Quantity: 1 Kg</p>
-                    <p><sup>₹</sup><span className="text-dark me-1 fs-4 fw-bold">9,029</span><span className="fs-13 text-muted">M.R.P: <s>₹15,120</s></span>  <span className="text-muted">(20% off)</span> 
+                    <p className="mb-0">Quantity: {product.quantity}</p>
+                    <p><sup>₹</sup><span className="text-dark me-1 fs-4 fw-bold">{product.price - (product.price * product.discount / 100)}</span><span className="fs-13 text-muted">M.R.P: <s>₹{product.price}</s></span>  <span className="text-muted">({product.discount} off)</span> 
                     </p>
                   </div>
                 </div>
