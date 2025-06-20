@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductCard from "./ProductCard";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
 
-const ProductGallery = ({items}) => {
-    return(
-        <>
-        <Row>
-            {
-                items.map((item) => {
-                    <Col key={item.id} sm={12} md={4} lg={3}><ProductCard product={item}/></Col>
-                })
-            }
-        </Row>
-        </>
-    )
+const ProductGallery = ({ items, isDiscount }) => {
+  const [discount, setDiscount] = useState(false);
+  const product = items || [];
+  console.log(items, "itemd in gallery");
+  if (discount) {
+    setDiscount(true);
+  }
+  return (
+    <>
+      <Row>
+        {product.map((items) => {
+  return (
+    <Col key={items.id} sm={12} md={4} lg={3}>
+      <ProductCard product={items} />
+    </Col>
+  );
+})}
+      </Row>
+    </>
+  );
 };
-export default ProductGallery
+export default ProductGallery;

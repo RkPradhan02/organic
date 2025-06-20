@@ -14,12 +14,15 @@ import { TfiShoppingCart } from "react-icons/tfi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Container } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Header =() => {
   const [showCart, setShowCart] = useState(false);
 
   const handleCartClose = () => setShowCart(false);
   const handleCartShow = () => setShowCart(true);
+  const cart = useSelector((state) => state.cart);
+  console.log("items in the cart are: ", cart.length)
     return(
         <Container fluid className="p-0">
             <Container fluid className="header-banner py-1 d-none d-lg-block">
