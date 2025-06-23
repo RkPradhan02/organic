@@ -32,7 +32,7 @@ const Home = () => {
       icons: <BsCurrencyDollar />,
     },
     {
-      id: 1,
+      id: 3,
       title: "24x7 Online Support",
       desc: "Nemo enim ipsam voluptatem.",
       icons: <BiSupport />,

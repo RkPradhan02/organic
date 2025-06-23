@@ -6,10 +6,10 @@
 }
 .cart-btn {
     border-radius: 100%;
-    border: 1px solid var(--gray-600);
+    /* border: 1px solid var(--gray-600); */
     color: var(--white);
     height: 42px;
-    width: 42px;
+    /* width: 42px; */
     display: flex;
     align-items: center;
     justify-content: end;
@@ -29,4 +29,14 @@
 }
 .nav-link:hover  {
     color: var(--color-active);
+}
+.product-count {
+    left: 28px;
+    top: 4px;
+    z-index: 100;
+    font-size: var(--font-xs);
+    color: var(--color-active);
+    font-weight: var(--font-bold);
+    text-align: center;
+    width: 16px;
 }

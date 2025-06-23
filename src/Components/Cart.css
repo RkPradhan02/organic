@@ -1,0 +1,10 @@
+.product-card {
+    border-bottom: 1px solid var(--white);
+}
+.product-card:hover {
+    box-shadow: unset;
+    border-bottom: 1px solid var(--gray-300);
+}
+.cart-left {
+    width: 100px;
+}

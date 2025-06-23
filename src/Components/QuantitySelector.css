@@ -1,0 +1,28 @@
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xxs);
+}
+
+.quantity .minus,
+.quantity .plus {
+  padding: 0 var(--spacing-sm);
+  font-size: var(--font-md);
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: var(--gray-300);
+  border-radius: var(--radius-xl);
+}
+
+.quantity .input-box {
+  width: 40px;
+  text-align: center;
+  /* padding: 4px; */
+  border: 1px solid var(--gray-500);
+  border-radius: var(--radius-sm);
+}
