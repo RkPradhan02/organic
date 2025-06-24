@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 import DealProducts from "../Components/DealProducts";
 
 const Home = () => {
-  const vegDeal = useMemo(() => ["1","5","12","15"],[]);
+  const vegDeal = useMemo(() => ["1","5","4","15"],[]);
   const [categories, setCategories] = useState();
   const facts = [
     {
@@ -32,7 +32,7 @@ const Home = () => {
       icons: <BsCurrencyDollar />,
     },
     {
-      id: 1,
+      id: 3,
       title: "24x7 Online Support",
       desc: "Nemo enim ipsam voluptatem.",
       icons: <BiSupport />,

@@ -22,7 +22,7 @@ const items = [
   {
     "id": "3",
     "name": "Carrot",
-    "price": 150,
+    "price": 40,
     "discount": 4,
     "quantity": "1 kg",
     "category": "vegetables",
@@ -32,11 +32,11 @@ const items = [
   {
     "id": "4",
     "name": "Onion",
-    "price": 104,
+    "price": 54,
     "discount": 1,
     "quantity": "1 kg",
     "category": "vegetables",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngplay.com%2Fimage%2F30279&psig=AOvVaw0JVaEAYx9jM_LI9oOh-d2L&ust=1749305769802000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCID7x_z93I0DFQAAAAAdAAAAABAE",
+    "image": "https://www.pngplay.com/wp-content/uploads/2/Onion-Transparent-Free-PNG-1.png",
     "deal": false
   },
   {
@@ -72,7 +72,7 @@ const items = [
   {
     "id": "8",
     "name": "Brinjal",
-    "price": 150,
+    "price": 70,
     "discount": 19,
     "quantity": "1 kg",
     "category": "vegetables",
@@ -452,7 +452,7 @@ const items = [
   {
     "id": "46",
     "name": "Pineapple",
-    "price": 146,
+    "price": 56,
     "discount": 7,
     "quantity": "1 kg",
     "category": "fruits",
@@ -462,7 +462,7 @@ const items = [
   {
     "id": "47",
     "name": "Papaya",
-    "price": 141,
+    "price": 14,
     "discount": 16,
     "quantity": "1 kg",
     "category": "fruits",
