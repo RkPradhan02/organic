@@ -16,7 +16,7 @@ const DealProduct = ({ productIds }) => {
       setProducts(result);
     }
   }, [productIds]);
-  console.log("products iin deal products", products)
+  // console.log("products iin deal products", products)
 
   return (
     <>

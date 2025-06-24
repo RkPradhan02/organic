@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./QuantitySelector.css"; // for styling
 
-const QuantitySelector = ({ quantity, setQuantity, min = 1, max = 10 }) => {
+const QuantitySelector = ({ quantity, setQuantity, min = 0.5, max = 20 }) => {
   const handleDecrease = () => {
-    const newQty = Math.max(quantity - 1, min);
+    const newQty = Math.max(quantity - 0.5, min);
     setQuantity(newQty);
   };
 
   const handleIncrease = () => {
-    const newQty = Math.min(quantity + 1, max);
+    const newQty = Math.min(quantity + 0.5, max);
     setQuantity(newQty);
   };
 

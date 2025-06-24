@@ -99,6 +99,7 @@
 }
 .fs-10 {
   font-size: 0.625rem;
+  line-height: var(--font-xs);
 }
 .text-black {
   color: var(--text-dark);

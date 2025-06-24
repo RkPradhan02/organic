@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 const ProductGallery = ({ items, isDiscount }) => {
   const [discount, setDiscount] = useState(false);
   const product = items || [];
-  console.log(items, "itemd in gallery");
+  // console.log(items, "itemd in gallery");
   if (discount) {
     setDiscount(true);
   }
@@ -14,12 +14,12 @@ const ProductGallery = ({ items, isDiscount }) => {
     <>
       <Row>
         {product.map((items) => {
-  return (
-    <Col key={items.id} sm={12} md={4} lg={3}>
-      <ProductCard product={items} />
-    </Col>
-  );
-})}
+          return (
+            <Col key={items.id} sm={6} md={3} lg={3} className="mb-4">
+              <ProductCard product={items} />
+            </Col>
+          );
+        })}
       </Row>
     </>
   );

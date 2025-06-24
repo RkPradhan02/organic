@@ -5,6 +5,9 @@
     z-index: 15;
     margin-bottom: 0;
 }
+/* .product-card {
+  border-radius: 6px;
+} */
 .product-card .card .card-content {
   padding: var(--spacing-xxs);
 }
@@ -21,6 +24,7 @@
 } */
 .card-image {
     position: relative;
+    background: var(--gray-50);
 }
 .card-image img {
     width: 100%;

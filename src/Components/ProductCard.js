@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/slices/cartSlice";
 import QuantitySelector from "./QuantitySelector";
 import "./ProductCard.css";
+import { Rating } from 'react-simple-star-rating'
 
 const ProductCard = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
@@ -47,11 +48,11 @@ const ProductCard = ({ product }) => {
                 <FaRegHeart />
               </a>
             </li>
-            <li className="cart-btn border-0">
+            <li className="cart-btn border-0" onClick={handleAdd}>
               <a
                 id="buy"
                 className="btn-floating waves-effect waves-light blue text-light"
-                onClick={handleAdd}
+                
               >
                 <MdAddShoppingCart />
               </a>
@@ -59,24 +60,25 @@ const ProductCard = ({ product }) => {
           </ul>
         </div>
 
-        <div className="p-3 w-100">
+        <div className="p-2 w-100">
           <span className="card-title-box">
-            <span className="card-title">{product.name}</span>
+            <p className="card-title">{product.name}</p>
+          <Rating initialValue={4} size={16} readonly />
           </span>
 
           <div className="card-content p-0">
-            <p className="mb-0 d-flex align-items-center justify-content-between">
-              Quantity: <span className="">in Kg</span>
+            <div className="mb-0 d-flex flex-wrap align-items-center justify-content-between">
+              Quantity: <span className="text-muted ms-1 me-auto"> in Kg</span>
               <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
-            </p>
+            </div>
 
-            <p>
+            <p className="mb-0">
               <sup>₹</sup>
               <span className="text-dark me-1 fs-4 fw-bold">{totalPrice}</span>
               <span className="fs-13 text-muted">
                 M.R.P: <s>₹{(product.price * quantity).toFixed(2)}</s>
               </span>{" "}
-              <span className="text-muted">({product.discount}% off)</span>
+              <span className="text-muted fs-10">({product.discount}% off)</span>
             </p>
           </div>
         </div>

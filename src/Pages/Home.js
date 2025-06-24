@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 import DealProducts from "../Components/DealProducts";
 
 const Home = () => {
-  const vegDeal = useMemo(() => ["1","5","12","15"],[]);
+  const vegDeal = useMemo(() => ["1","5","4","15"],[]);
   const [categories, setCategories] = useState();
   const facts = [
     {
