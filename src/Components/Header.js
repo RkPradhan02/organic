@@ -8,7 +8,6 @@ import Col from "react-bootstrap/Col";
 import "./Header.css";
 import { IoBriefcaseOutline, IoHeartOutline } from "react-icons/io5";
 import { VscLocation } from "react-icons/vsc";
-
 import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import Cart from "./Cart";
@@ -19,6 +18,7 @@ const Header = () => {
   return (
     <>
       <Container fluid className="header-banner py-1 d-none d-lg-block">
+
         <Container>
           <Row>
             <Col sm={12} md={6} className="text-dark">

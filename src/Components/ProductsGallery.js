@@ -20,6 +20,7 @@ const ProductGallery = ({ items, isDiscount }) => {
             </Col>
           );
         })}
+
       </Row>
     </>
   );

@@ -18,6 +18,8 @@ const DealProduct = ({ productIds }) => {
   }, [productIds]);
   // console.log("products iin deal products", products)
 
+
+
   return (
     <>
         <ProductGallery items={products} isDiscount={true} />
